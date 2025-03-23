@@ -28,6 +28,9 @@ app.use('/api/requests', requestRoutes);
 // Error handler middleware
 app.use(errorHandler);
 
+const cors = require('cors');
+app.use(cors());
+
 app.get('/api/cek', (req, res) => {
   res.send('Backend Terhubung!');
 });
