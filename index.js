@@ -28,6 +28,10 @@ app.use('/api/requests', requestRoutes);
 // Error handler middleware
 app.use(errorHandler);
 
+app.get('/api/cek', (req, res) => {
+  res.send('Backend Terhubung!');
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
