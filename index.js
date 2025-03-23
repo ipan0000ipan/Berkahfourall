@@ -30,7 +30,7 @@ app.use(errorHandler);
 
 const cors = require('cors');
 app.use(cors({
-  origin: 'https://proserveo.com', // ganti dengan domain frontend di cPanel
+  origin: 'https://prosserveo.com', // ganti dengan domain frontend di cPanel
 }));
 
 const PORT = process.env.PORT || 3000;
