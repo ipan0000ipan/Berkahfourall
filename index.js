@@ -28,11 +28,6 @@ app.use('/api/requests', requestRoutes);
 // Error handler middleware
 app.use(errorHandler);
 
-const cors = require('cors');
-app.use(cors({
-  origin: 'https://prosserveo.com', // ganti dengan domain frontend di cPanel
-}));
-
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
